@@ -1,1 +1,130 @@
-# my_page2
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박동현의 프로필</title>
+    <style>
+        :root {
+            --sky-blue: #87CEEB;
+            --soft-blue: #E0F2F7;
+            --dark-blue: #4682B4;
+            --white: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--soft-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-color);
+        }
+
+        .profile-card {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-header {
+            background-color: var(--sky-blue);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(135, 206, 235, 0.4);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: var(--dark-blue);
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            background-color: #f8fdff;
+            border-left: 4px solid var(--sky-blue);
+            border-radius: 4px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            font-size: 14px;
+            color: var(--dark-blue);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 16px;
+        }
+
+        .food-badge {
+            display: inline-block;
+            background-color: var(--sky-blue);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">박</div>
+        <h1>박동현</h1>
+        
+        <div class="info-list">
+            <div class="info-item">
+                <span class="info-label">생년월일</span>
+                <span class="info-value">2005년 10월 11일</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">대학교</span>
+                <span class="info-value">상명대학교 전기공학과 재학</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">좋아하는 음식</span>
+                <span class="info-value">햄버거 <span class="food-badge">🍔 Burger Lover</span></span>
+            </div>
+        </div>
+
+        <footer>© 2026 Park Dong-hyun Profile</footer>
+    </div>
+</body>
+</html>
